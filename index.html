@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-12</title>
+</head>
+<body>
+
+
+
+    <script>
+
+				
+				document.write("<h4><u> Assignment-01 </u></h4>");
+
+
+				function item (mobile, watch, laptop){
+            var totalAmount = mobile+watch+laptop
+          return totalAmount;
+        }
+        document.write("<h1>Total Spent: " + item (87000,100000,34000) + " BDT</h1>");
+
+
+		document.write("<h4><u> Assignment-02 </u></h4>");
+
+                function hotelCost(day){
+				var cost=0;
+				if (day<=10){
+					cost=day*100;
+				}else if(day<=20){
+					var firstPart=10*100;
+					var remaining=day-10;
+					var secondPart=remaining*80;
+					cost =firstPart+secondPart;
+				}else{
+					var firstPart=10*100;
+					var secondPart=10*80;
+					var remaining= day-20;
+					var thirdPart=remaining*50;
+					cost =firstPart+secondPart+thirdPart;
+					}
+					return cost;
+			}
+				var totalCost= hotelCost(12);
+				
+				document.write("<h1>Total Hotel Cost is: <strong><i>"+totalCost+"</i></strong></h1>");
+			
+				document.write("<h4><u> Assignment-03 </u></h4>");
+
+
+				var frnds = ["Mamun","Sir Brendon Eich","w. chan kim","Abrodina","Md Hossqain","Ply Begum","Ruma","Lin Quinan","Veronica Roth","Lee Yoo Chan",];
+document.write("<h2>My Friends are:</h2><ol>");
+for(let name of frnds) {document.write("<li>"+name+"</li>");}
+document.write("</ul>");
+function largestNameIs(frndsArray) {var targetIndex = 0;
+for(var i = 1; i < frndsArray.length; i++) {if(frndsArray[i].length > frndsArray[targetIndex].length)
+  {targetIndex = i;}}
+return frndsArray[targetIndex];}
+
+var largestName = largestNameIs(frnds);
+document.write("<h1>My Largest Friend Name is : <strong><i>"+largestName+"</i></strong></h1>");
+
+
+</script>
+
+   </body>
+</html>
